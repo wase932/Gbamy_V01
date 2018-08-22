@@ -1,8 +1,3 @@
-/* #topRow {
-    opacity: 0.9;
-    height:400px;
+.navbar-nav .nav-item:hover {
+    border-bottom: 1px solid white;
 }
-
-.dontWrap {
-    display: flex;
-  } */
