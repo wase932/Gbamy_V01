@@ -1,3 +1,40 @@
 .navbar-nav .nav-item:hover {
     border-bottom: 1px solid white;
 }
+
+.businessHighlightBtn {
+    padding-bottom: 10px;
+    border-bottom: 4px solid lightgray;
+    font-size: 12px
+}
+.businessHighlightBtn:hover {
+    cursor: pointer;
+    border-bottom: 4px solid #2388e0;    
+}
+
+.businessHighlightBtn.active {
+    cursor: pointer;
+    border-bottom: 4px solid #2388e0;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+
+.btn-white-bg {
+    background: white;
+    border-width: 1px;
+}
+
+.paginationLine {
+    display: flex;
+    justify-content: center;
+    color: #2388e0;
+    width: 80%;
+}
