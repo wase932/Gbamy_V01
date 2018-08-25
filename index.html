@@ -22,8 +22,8 @@
   </head>
   <body>
       <!-- navigation -->
-      <div class="container-fluid p-0 m-0" style="min-width: 400px;">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary m-0 pb-0 pt-0">
+      <div class="container-fluid p-0 m-0">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary m-0 pb-0 pt-0">
                     <a class="navbar-brand" href="#">Gbamy</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon ml-auto"></span>
@@ -58,11 +58,12 @@
 
       <div class="container-fluid">
           <!-- one -->
-            <div class="row" style="background:transparent url('/images/dino-sunset-2017-800x400.jpg') no-repeat center center /cover; height: 400px; opacity: 0.8; min-width: 400px">
-               <div class="col-12" style="min-width: 400px">
-                    <div class="input-group border-0 justify-content-center" style="top: 70%; min-width: 400px;">
+
+            <div class="row" style="background:transparent url('/images/dino-sunset-2017-800x400.jpg') no-repeat center center /cover; height: 400px; opacity: 0.8; min-width: 600px">
+               <div class="col">
+                   <div class="input-group border-0 justify-content-md-center" style="top: 70%;">
                         <div class="input-group-prepend border-0">
-                                <label class="input-group-text bg-light border-0 text-primary">Find</label>
+                            <label class="input-group-text bg-light border-0 text-primary">Find</label>
                         </div>
                         <div class="input-group-append">
                             <input type="text" class="border-0 p-2" placeholder="restaurants, banks ..." aria-label="a place to eat, sleep, hangout..." aria-describedby="button-addon2">
@@ -79,39 +80,38 @@
                     </div>
                 </div>
             </div>
-           <!-- two -->
+
+            <!-- highlights form section  -->
+            <div class="row justify-content-center m-0">
+                <!-- <div class="col-3 align-self-center ml-2"> -->
+                <div class="input-group m-3 col-sm-6 col-lg-3">
+                    <div class="input-group-prepend">
+                        <button type="button" class="btn btn-outline-primary">Highlights from </button>
+                    </div>
+                    <input type="text" class="form-control border border-secondary" aria-label="Text input with segmented dropdown button" value="Abuja">
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Lagos</a>
+                            <a class="dropdown-item" href="#">Port-Harcourt</a>
+                            <a class="dropdown-item" href="#">Kaduna</a>
+                            <a class="dropdown-item" href="#">Jos</a>
+                            <div role="separator" class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Ghana</a>
+                            <a class="dropdown-item" href="#">South-Africa</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <!-- highlights form section  -->
+            
+          <!-- two -->
           <div class="row p-3">
             <div class="col-12">
                 <div class="container">
-                    <!-- highlights form section  -->
-                    <div class="row justify-content-center m-0">
-                        <!-- <div class="col-1 text-left align-self-center">
-                            <span class="text-monospace">Highlights From </span>
-                        </div> -->
-                        <div class="col-4 align-self-center ml-2">
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <button type="button" class="btn btn-secondary">Highlights from </button>
-                                </div>
-                                <input type="text" class="form-control border border-secondary" aria-label="Text input with segmented dropdown button" value="Abuja">
-                                <div class="input-group-append">
-                                    <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="sr-only">Toggle Dropdown</span>
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Lagos</a>
-                                        <a class="dropdown-item" href="#">Port-Harcourt</a>
-                                        <a class="dropdown-item" href="#">Kaduna</a>
-                                        <a class="dropdown-item" href="#">Jos</a>
-                                        <div role="separator" class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Ghana</a>
-                                        <a class="dropdown-item" href="#">South-Africa</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- highlights form section  -->
 
                     <!-- Category selector section  -->
                     <div class="row text-center align-middle">
@@ -160,86 +160,167 @@
                         </div>
                     </div>
                     <!-- pagination -->
+                    
                     <!-- cards -->
                     <div class="row mt-4 justify-content-center">
                         <div class="card-group">
+
                             <div class="card shadow-lg m-3" style="width:12rem;">
-                                <img class="card-img-top" src="./images/restaurant_img.jpg" alt="Card image cap">
+                                <a href="#">
+                                    <img class="card-img-top" src="./images/restaurant_img.jpg" alt="Card image cap">
+                                </a>
                                 <div class="card-body">
-                                    <h5 class="card-title text-center">The Orchid Bistro</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <div class="text-danger text-center">
+                                    <a class="card-title h6" href="#">The Orchid Bistro</a>
+                                    <div class="text-danger">
                                         <span class="fas fa-star"></span>
                                         <span class="fas fa-star"></span>
                                         <span class="fas fa-star"></span>
                                         <span class="fas fa-star"></span>
                                         <span class="fas fa-star-half-alt"></span>
-                                        <br/>
-                                        <small class="text-muted">(3,901)</small>
+                                    </div>
+                                    <div>
+                                        <small class="text-muted">3,901 reviews</small> 
+                                    </div>
+                                    <div>
+                                        <span class="small opacity-4">&#8358;</span>
+                                        <span class="small opacity-4">&#8358;</span>
+                                        <span class="small opacity-1">&#8358;</span>
+                                        <span class="small opacity-1">&#8358;</span>
+                                        <span class="small opacity-1">&#8358;</span>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="small badge badge-secondary">Coffee &amp; Tea</a>
+                                        <a href="#" class="small badge badge-secondary">Restaurant</a>
+                                        <a href="#" class="small badge badge-secondary">Night-life</a>
                                     </div>
                                 </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                    <div class="card-footer border-0 bg-white">
+                                        <i class="fas fa-map-marker-alt mr-2 small"></i><a class="small" href="#">Ikoyi, Lagos</a>
+                                    </div>
+                            </div>
+
+
+                            <div class="card shadow-lg m-3" style="width:12rem;">
+                                <a href="#">
+                                    <img class="card-img-top" src="./images/iStock-509112518-800x400.jpg" alt="Card image cap">
+                                </a>
+                                <div class="card-body">
+                                    <a class="card-title h6" href="#">Lafia center for religious meditation</a>
+                                    <div class="text-danger">
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                    </div>
+                                    <div>
+                                        <small class="text-muted">98 reviews</small> 
+                                    </div>
+                                    <div>
+                                        <span class="small opacity-4">&#8358;</span>
+                                        <span class="small opacity-1">&#8358;</span>
+                                        <span class="small opacity-1">&#8358;</span>
+                                        <span class="small opacity-1">&#8358;</span>
+                                        <span class="small opacity-1">&#8358;</span>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="small badge badge-secondary">Religion</a>
+                                        <a href="#" class="small badge badge-secondary">Resort</a>
+                                    </div>
+                                </div>
+                                <div class="card-footer border-0 bg-white">
+                                    <i class="fas fa-map-marker-alt mr-2 small"></i><a class="small" href="#">Lafia, Kano</a>
                                 </div>
                             </div>
-                            <div class="card shadow-lg m-3" style="width: 12rem;">
-                                <img class="card-img-top" src="./images/mechanic_img.jpg" alt="Card image cap">
+
+                            <div class="card shadow-lg m-3" style="width:12rem;">
+                                <a href="#">
+                                    <img class="card-img-top" src="./images/mechanic_img.jpg" alt="Card image cap">
+                                </a>
                                 <div class="card-body">
-                                    <h5 class="card-title text-center">Muyideen Motors</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <div class="text-danger text-center">
+                                    <a class="card-title h6" href="#">Muyideen Motors</a>
+                                    <div class="text-danger">
                                         <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="far fa-star"></span>
+                                        <span class="far fa-star"></span>
+                                        <span class="far fa-star"></span>
+                                    </div>
+                                    <div>
+                                        <small class="text-muted">12,299 reviews</small> 
+                                    </div>
+                                    <div>
+                                        <span class="small opacity-4">&#8358;</span>
+                                        <span class="small opacity-4">&#8358;</span>
+                                        <span class="small opacity-4">&#8358;</span>
+                                        <span class="small opacity-4">&#8358;</span>
+                                        <span class="small opacity-1">&#8358;</span>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="small badge badge-secondary">Auto</a>
+                                    </div>
+                                </div>
+                                <div class="card-footer border-0 bg-white">
+                                    <i class="fas fa-map-marker-alt mr-2 small"></i><a class="small" href="#">Plateau Jos</a>
+                                </div>
+                            </div>
+
+                            <div class="card shadow-lg m-3" style="width:12rem;">
+                                <a href="#">
+                                    <img class="card-img-top" src="./images/resort_img.jpg" alt="Card image cap">
+                                </a>
+                                <div class="card-body">
+                                    <a class="card-title h6" href="#">Ikongosi</a>
+                                    <div class="text-danger">
                                         <span class="fas fa-star"></span>
                                         <span class="fas fa-star"></span>
                                         <span class="fas fa-star"></span>
                                         <span class="fas fa-star-half-alt"></span>
-                                        <br/>
-                                        <small class="text-muted">(12,299)</small>
+                                        <span class="far fa-star"></span>
+                                    </div>
+                                    <div>
+                                        <small class="text-muted">117 reviews</small> 
+                                    </div>
+                                    <div>
+                                        <span class="small opacity-4">&#8358;</span>
+                                        <span class="small opacity-4">&#8358;</span>
+                                        <span class="small opacity-4">&#8358;</span>
+                                        <span class="small opacity-1">&#8358;</span>
+                                        <span class="small opacity-1">&#8358;</span>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="small badge badge-secondary">Resort</a>
+                                        <a href="#" class="small badge badge-secondary">Hotel</a>
+                                        <a href="#" class="small badge badge-secondary">Vacation</a>
                                     </div>
                                 </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                <div class="card-footer border-0 bg-white">
+                                    <i class="fas fa-map-marker-alt mr-2 small"></i><a class="small" href="#">Iwo, Osun</a>
                                 </div>
                             </div>
-                            <div class="card shadow-lg m-3" style="width: 12rem;">
-                                <img class="card-img-top" src="./images/resort_img.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 href="#" class="card-title text-center">Ikongosi</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <div class="text-danger text-center">
-                                        <span class="fas fa-star"></span>
-                                        <span class="fas fa-star"></span>
-                                        <span class="fas fa-star"></span>
-                                        <span class="fas fa-star"></span>
-                                        <span class="fas fa-star-half-alt"></span>
-                                        <br/>
-                                        <small class="text-muted">(190)</small>
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">Last updated 3 mins ago</small>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
-
                     <!-- cards -->
-
-                    <!-- Category selector section  -->
-
                 </div>
             </div>
         </div>
-         <!-- three -->
-        <div class="row bg-primary">
+        <!-- two -->
+        <hr/>
+        <!-- three -->
+        <div class="row">
             <div class="col-12">
+                
             </div>
         </div>
+        <!-- three -->
+
          <!-- four -->
         <div class="row bg-primary">
             <div class="col-12">
             </div>
         </div>
+        <!-- four -->
       </div>
 
   </body>

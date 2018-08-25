@@ -1,3 +1,4 @@
+
 .navbar-nav .nav-item:hover {
     border-bottom: 1px solid white;
 }
@@ -37,4 +38,27 @@
     justify-content: center;
     color: #2388e0;
     width: 80%;
+}
+
+.truncate{
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis
+    }
+
+.opacity-1 {
+    opacity: 0.2;
+}
+
+.opacity-2 {
+    opacity: 0.4;
+}
+
+.opacity-3 {
+    opacity: 0.6;
+}
+
+.opacity-4 {
+    opacity: 0.8;
 }
