@@ -21,3 +21,13 @@
         column-count: 5;
     }
 } */
+
+.image-group-row {
+    max-height:100px;
+    overflow:hidden;
+  }
+  
+.image-group-img {
+     width:100%;
+     min-height:100px;
+  }
